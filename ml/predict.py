@@ -99,7 +99,7 @@ def predict_image(image_bytes: bytes) -> dict:
     arr = np.array(img) / 255.0
     arr = np.expand_dims(arr, axis=0)  # shape: (1, 380, 380, 3)
 
-    # Predict
+    # Predict — model outputs 6 softmax probabilities
     preds = _model.predict(arr, verbose=0)[0]  # shape: (6,)
     top_idx = int(np.argmax(preds))
     confidence = float(preds[top_idx]) * 100
