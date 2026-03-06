@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+*.h5
+data/raw/
+.env
+model_final.h5
+*.egg-info/
+.DS_Store

@@ -1,0 +1,12 @@
+fastapi==0.110.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9
+Pillow==10.3.0
+numpy==1.26.4
+scikit-learn==1.4.2
+# TensorFlow — install separately based on your platform:
+# CPU-only (laptop/testing):  pip install tensorflow-cpu==2.16.1
+# GPU (Linux server):         pip install tensorflow[and-cuda]==2.16.1
+# Note: tensorflow-macos for Apple Silicon
+tensorflow==2.16.1
+kaggle==1.6.12
